@@ -3,7 +3,8 @@ import { Marquee } from "@/components/magicui/marquee"
 export default function Artcles() {
   return (
     <div>
-      <h1 className="text-center text-5xl py-8">Articles</h1>
+      <h1 className="text-center font-semibold text-5xl py-8">Articles</h1>
+      <div className="py-8"></div> {/* Added space */}
       <Marquee className="your-custom-class" pauseOnHover>
         <div className="flex flex-col space-y-12 text-center">
           <div className="flex items-center justify-center space-x-4">
