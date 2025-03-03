@@ -12,6 +12,7 @@ import HiveHouse from "../../public/images/HiveHouse.png";
 import image6 from "../../public/images/image6.png";
 import { Accordion } from "@/components/ui/accordion";
 import { GoArrowUpRight } from "react-icons/go";
+import Artcles from "./components/Artcles";
 
 export default function Home() {
   return (
@@ -21,22 +22,22 @@ export default function Home() {
 
       <section className="flex justify-between items-center px-16 pt-1">
         <div className="flex flex-col justify-center">
-          <h3 className="text-5xl text-black tracking-wide font-semibold py-10 pt-5">
+          <h3 className="text-7xl text-black tracking-wide leading-tight font-semibold py-10 pt-5">
             Discover a place <br /> you 'll love to live
           </h3>
         </div>
 
         <div className="flex flex-col justify-center py-3 pt-10 mt-3">
-          <h1 className="text-gray-400 text-xm">
+          <h1 className="text-gray-400 text-xm leading-tight">
             Beautiful homes. Incredible Locations. <br /> Pricing that makes sense
           </h1>
 
-          <div className="flex mt-4 space-x-4">
+          <div className="flex mt-4 space-x-9">
             {/* City Dropdown */}
             <Accordion title="Select City">
               <div className="px-0 mt-4">
                 <label htmlFor="city" className="block text-xm text-gray-400">City</label>
-                <select id="city" className="mt-2 border border-gray-400 rounded w-44 max-w-xs" defaultValue="Maharagama">
+                <select id="city" className="mt-2 border border-gray-300 rounded w-47 max-w-xs h-9 text-sm px-2" defaultValue="Maharagama">
                   <option value="Maharagama">Maharagama</option>
                   <option value="Colombo">Colombo</option>
                   <option value="Kandy">Kandy</option>
@@ -48,7 +49,7 @@ export default function Home() {
             <Accordion title="Select Type">
               <div className="px-0 mt-4">
                 <label htmlFor="type" className="block text-xm text-gray-400">Type</label>
-                <select id="type" className="mt-2 border border-gray-400 rounded w-44" defaultValue="Modern">
+                <select id="type" className="mt-2 border border-gray-300 rounded w-47 h-9 text-sm px-2" defaultValue="Modern">
                   <option value="Modern">Modern</option>
                   <option value="Classic">Classic</option>
                 </select>
@@ -81,35 +82,35 @@ export default function Home() {
       <section className="flex flex-col py-9 px-16">
         <div className="flex justify-between items-center mb-4">
           <div className="flex flex-col justify-center">
-            <h3 className="text-4xl mt-3 text-black font-semibold">New homes <br /> in sale</h3>
+            <h3 className="text-5xl leading-tight mt-3 text-black font-semibold">New homes <br /> in sale</h3>
           </div>
 
           <div className="flex flex-col justify-center">
-            <h1 className="text-gray-400 text-xm mt-8">Explore a handpicked selection of homes for sale and find the perfect place to call <br /> your own. Start toward your dream home today!</h1>
+            <h1 className="text-gray-400 text-base mt-8 leading-tight">Explore a handpicked selection of homes for sale and find the perfect place to call <br /> your own. Start your journey toward your dream home today!</h1>
             <div className="flex items-center text-black font-semibold text-xs py-3">
-              <p className="mr-2 text-sm">View all homes</p>
-              <GoArrowUpRight />
+              <p className="mr-2 text-xl tracking-wide">View all homes</p>
+              <GoArrowUpRight size={18} />
             </div>
           </div>
         </div>
 
         <div className="flex space-x-4">
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start space-y-2">
             <Image src={modernapartment} alt="modernapartment" width={600} height={800} />
-            <p className="text-black font-bold">Modern Apartment</p>
+            <p className="text-black  text-2xl font-bold">Modern Apartment</p>
             <p className="text-gray-400 text-sm">No. 25, Galle Road, Colombo 03, Sri Lanka</p>
             <p className="text-black font-semibold text-sm">Modern</p>
           </div>
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start space-y-2">
             <Image src={countryside} alt="countryside" width={600} height={800} />
-            <p className="text-black font-bold">Country Style House</p>
+            <p className="text-black  text-2xl font-bold">Country Style House</p>
             <p className="text-gray-400 text-xs">145/7, Kandy Road, Peradeniya, Sri Lanka</p>
             <p className="text-black font-semibold text-sm">Country / Modern</p>
           </div>
 
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start space-y-2">
             <Image src={modern} alt="modern" width={600} height={800} />
-            <p className="text-black font-bold">Modern 2 Sto. House</p>
+            <p className="text-black text-2xl font-bold">Modern 2 Sto. House</p>
             <p className="text-gray-400 text-xs">36A, Beachside Avenue, Galle, Sri Lanka</p>
             <p className="text-black font-semibold text-sm">Modern</p>
           </div>
@@ -119,7 +120,7 @@ export default function Home() {
       <section className="flex flex-col py-16 px-16">
         <div className="flex justify-between items-start mb-4">
           {/* Image on the left */}
-          <Image src={HiveHouse} alt="HiveHouse" width={2500} height={386} />
+          <Image src={HiveHouse} alt="HiveHouse" width={2100} height={300} />
 
           {/* Text content on the right, aligned properly */}
           <div className="flex flex-col justify-start ml-7 w-full">
@@ -128,7 +129,7 @@ export default function Home() {
               <h1 className="text-xs font-semibold">Available now</h1>
             </div>
 
-            <h3 className="text-4xl font-bold text-center py-5">Hive House</h3>
+            <h3 className="text-5xl font-semibold text-center py-5">Hive House</h3>
             <p className="text-gray-400 py-2">10/2, Lake View Gardens, Nuwara Eliya, Sri Lanka</p>
 
             {/* Bedroom, Bath, and Sq Ft Details */}
@@ -148,64 +149,67 @@ export default function Home() {
             </div>
 
             {/* Description */}
-            <p className="max-w-lg mt-7">
+            <p className="max-w-lg mt-7 text-sm justify-end text-gray-400">
               Spacious 5-bedroom, 6-bathroom home featuring modern interiors, an open-plan living area, and a private garden. Perfect for comfort and entertaining!
             </p>
 
             {/* "See Home" Button with Icon */}
-            <div className="flex items-center text-black font-semibold text-xs py-5">
-              <p className="mr-2">See home</p>
-              <GoArrowUpRight />
+            <div className="flex items-center text-black font-semibold text-xs py-16">
+              <p className="mr-2 text-xl">See home</p>
+              <GoArrowUpRight size={18} />
             </div>
           </div>
         </div>
       </section>
 
-      <div className="my-3">
+      <div className="my-3 py-1">
         <div className="flex items-center">
-          <hr className="border-black w-1/3 ml-50" />
-          <p className="mx-2 text-4xl ">We only feature the top performing</p>
+          <hr className="border-black w-1/3 ml-15" />
+          <p className="mx-1 text-5xl space-x-8">We only feature the top performing</p>
         </div>
         <div className="flex items-center">
-          <p className="mx-2 text-4xl ml-16">homes and verified manufactures.</p>
-          <hr className="border-black w-1/2" />
+          <p className="mx-2 text-5xl ml-16">homes and verified manufactures.</p>
+          <hr className="border-black w-1/3 mt-4 mr-2" />
         </div>
       </div>
 
-      <section className="flex items-start py-4 px-16">
-        <div className="flex flex-col mr-4">
-          <p className="text-4xl mb-2 py-7">
-            Expertise <br /> and passion, on measure
-          </p>
-          <p className="mb-4 text-xs space-x-2 text-justify leading-loose">
-            From humble beginnings to a trusted name, our <br /> journey has been built on passion, dedication, and a commitment to <br /> excellence. Over the years, we have grown with a vision to provide <br /> exceptional service, creating lasting relationships with our clients and <br /> communities. With a strong foundation and a forward-thinking <br /> approach, we continue to evolve, embracing innovation while staying <br /> true to our core values.
-          </p>
-        </div>
-        <Image 
-          src={image6}
-          alt="image6"
-          width={500}
-          height={500} 
-          className="py-4 px-4 ml-54"
-        />
-      </section>
-
-      <h1 className="text-center font-semibold text-2xl py-8">Articles</h1>
-
-      <Marquee className="your-custom-class" pauseOnHover>
        
-        <ul>
-          <li className="mx-4">Your Bathroom</li>
-        </ul>
-        <ul>
-          <li className="mx-4 text-gray-400">July 03, 2025</li>
-        </ul>
-        <ul>
-          <li className="mx-4 text-gray-400">Bathroom Trends You`ll Want To Incorporate in Your BAthrom</li>
-        </ul>
+      <section className="flex items-start py-4 px-16">
+  {/* Text Content */}
+  <div className="flex flex-col mr-8 max-w-lg">
+  <p className="text-5xl mb-8 mt-5 py-2">
+      Expertise and<br /> passion, on measure
+    </p>
+    <p className="mb-6 text-xs text-justify leading-loose">
+   <span className="float-right w-full text-right indent-0">From humble beginnings to a trusted name, our</span>
+   <br /> <span className="float-right w-full text-justify indent-0">journey has been built on passion, dedication, and a commitment to</span>
+   <br /> <span className="float-right w-full text-justify indent-0">excellence. Over the years, we have grown with a vision to provide</span>
+   <br /> <span className="float-right w-full text-justify indent-0">exceptional service, creating lasting relationships with our clients and</span>
+   <br /> <span className="float-right w-full text-justify indent-0">communities. With a strong foundation and a forward-thinking</span>
+   <br /> <span className="float-right w-full text-justify indent-0">approach, we continue to evolve, embracing innovation while staying</span>
+   <br /> <span className="float-left indent-0">true to our core values.</span>
+</p>
+<div className="flex items-center text-black font-semibold text-xs py-16">
+            <p className="mr-2 text-xl">Our history</p>
+            <GoArrowUpRight size={18} />
+</div>
+
+  </div>
+
+  {/* Image with Increased Size */}
+  <Image 
+    src={image6}
+    alt="image6"
+    width={600}   // Increased width
+    height={700}  // Increased height
+    className="ml-8 object-cover"
+  />
+</section>
 
 
-      </Marquee>
+      {/* Article */}
+
+      <Artcles />
       
     </div>
   );
