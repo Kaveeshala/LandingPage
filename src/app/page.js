@@ -14,6 +14,7 @@ import { Accordion } from "@/components/ui/accordion";
 import { GoArrowUpRight } from "react-icons/go";
 import Artcles from "./components/Artcles";
 import HeroSection from "./components/HeroSection";
+import Clients from "./components/Clients";
 
 export default function Home() {
   return (
@@ -28,12 +29,7 @@ export default function Home() {
       
       <h1 className="text-gray-400 text-center py-7 font-semibold">Trusted by</h1>
 
-      <Marquee className="your-custom-class" pauseOnHover>
-        <Image src={image_iva} alt="Image 1" width={100} height={100} />
-        <Image src={image_ky} alt="Image 2" width={100} height={100} />
-        <Image src={image_logoIP} alt="Image 3" width={100} height={100} />
-        <Image src={image_logol} alt="Image 4" width={100} height={100} />
-      </Marquee>
+      <Clients />
 
       <section className="flex flex-col py-9 px-16">
         <div className="flex justify-between items-center mb-4">
