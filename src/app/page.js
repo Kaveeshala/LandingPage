@@ -13,63 +13,19 @@ import image6 from "../../public/images/image6.png";
 import { Accordion } from "@/components/ui/accordion";
 import { GoArrowUpRight } from "react-icons/go";
 import Artcles from "./components/Artcles";
+import HeroSection from "./components/HeroSection";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
+    <div className="">
       {/* Hero Section */}
+
+      <HeroSection />
       <div></div>
 
-      <section className="flex justify-between items-center px-16 pt-1">
-        <div className="flex flex-col justify-center">
-          <h3 className="text-7xl text-black tracking-wide leading-tight font-semibold py-10 pt-5">
-            Discover a place <br /> you 'll love to live
-          </h3>
-        </div>
 
-        <div className="flex flex-col justify-center py-3 pt-10 mt-3">
-          <h1 className="text-gray-400 text-xm leading-tight">
-            Beautiful homes. Incredible Locations. <br /> Pricing that makes sense
-          </h1>
 
-          <div className="flex mt-4 space-x-9">
-            {/* City Dropdown */}
-            <Accordion title="Select City">
-              <div className="px-0 mt-4">
-                <label htmlFor="city" className="block text-xm text-gray-400">City</label>
-                <select id="city" className="mt-2 border border-gray-300 rounded w-47 max-w-xs h-9 text-sm px-2" defaultValue="Maharagama">
-                  <option value="Maharagama">Maharagama</option>
-                  <option value="Colombo">Colombo</option>
-                  <option value="Kandy">Kandy</option>
-                </select>
-              </div>
-            </Accordion>
-
-            {/* Type Dropdown */}
-            <Accordion title="Select Type">
-              <div className="px-0 mt-4">
-                <label htmlFor="type" className="block text-xm text-gray-400">Type</label>
-                <select id="type" className="mt-2 border border-gray-300 rounded w-47 h-9 text-sm px-2" defaultValue="Modern">
-                  <option value="Modern">Modern</option>
-                  <option value="Classic">Classic</option>
-                </select>
-              </div>
-            </Accordion>
-          </div>
-        </div>
-      </section>
-
-      {/* Image 1 section */}
-      <div className="flex justify-center py-10">
-        <Image
-          src={image1}
-          alt="house"
-          width={1159}
-          height={1159}
-          className=""
-        />
-      </div>
-
+      
       <h1 className="text-gray-400 text-center py-7 font-semibold">Trusted by</h1>
 
       <Marquee className="your-custom-class" pauseOnHover>
