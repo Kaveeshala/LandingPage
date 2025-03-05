@@ -1,13 +1,5 @@
 import Image from "next/image";
-import image1 from "../../public/images/image1.png";
-import image_iva from "../../public/images/image_iva.png";
-import image_ky from "../../public/images/image_ky.png";
-import image_logoIP from "../../public/images/image_logoIP.png";
-import image_logol from "../../public/images/image_logol.png";
-import { Marquee } from "@/components/magicui/marquee";
-import countryside from "../../public/images/countryside.png";
-import modern from "../../public/images/modern.png";
-import modernapartment from "../../public/images/modernapartment.png";
+
 import HiveHouse from "../../public/images/HiveHouse.png";
 import image6 from "../../public/images/image6.png";
 import { Accordion } from "@/components/ui/accordion";
@@ -15,6 +7,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import Artcles from "./components/Artcles";
 import HeroSection from "./components/HeroSection";
 import Clients from "./components/Clients";
+import Homes from "./components/Homes";
 
 export default function Home() {
   return (
@@ -31,43 +24,9 @@ export default function Home() {
 
       <Clients />
 
-      <section className="flex flex-col py-9 px-16">
-        <div className="flex justify-between items-center mb-4">
-          <div className="flex flex-col justify-center">
-            <h3 className="text-5xl leading-tight mt-3 text-black font-semibold">New homes <br /> in sale</h3>
-          </div>
+      <Homes />
 
-          <div className="flex flex-col justify-center">
-            <h1 className="text-gray-400 text-base mt-8 leading-tight">Explore a handpicked selection of homes for sale and find the perfect place to call <br /> your own. Start your journey toward your dream home today!</h1>
-            <div className="flex items-center text-black font-semibold text-xs py-3">
-              <p className="mr-2 text-xl tracking-wide">View all homes</p>
-              <GoArrowUpRight size={18} />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex space-x-4">
-          <div className="flex flex-col items-start space-y-2">
-            <Image src={modernapartment} alt="modernapartment" width={600} height={800} />
-            <p className="text-black  text-2xl font-bold">Modern Apartment</p>
-            <p className="text-gray-400 text-sm">No. 25, Galle Road, Colombo 03, Sri Lanka</p>
-            <p className="text-black font-semibold text-sm">Modern</p>
-          </div>
-          <div className="flex flex-col items-start space-y-2">
-            <Image src={countryside} alt="countryside" width={600} height={800} />
-            <p className="text-black  text-2xl font-bold">Country Style House</p>
-            <p className="text-gray-400 text-xs">145/7, Kandy Road, Peradeniya, Sri Lanka</p>
-            <p className="text-black font-semibold text-sm">Country / Modern</p>
-          </div>
-
-          <div className="flex flex-col items-start space-y-2">
-            <Image src={modern} alt="modern" width={600} height={800} />
-            <p className="text-black text-2xl font-bold">Modern 2 Sto. House</p>
-            <p className="text-gray-400 text-xs">36A, Beachside Avenue, Galle, Sri Lanka</p>
-            <p className="text-black font-semibold text-sm">Modern</p>
-          </div>
-        </div>
-      </section>
+      
 
       <section className="flex flex-col py-16 px-16">
         <div className="flex justify-between items-start mb-4">
