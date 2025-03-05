@@ -9,7 +9,7 @@ import image1 from '../../../public/images/image1.png'
 
 export default function HeroSection() {
   return (
-    <section className="max-w-7xl mx-auto flex flex-col gap-20 bg-amber-400">
+    <section className="max-w-7xl mx-auto flex flex-col gap-20 ">
                 <div className='flex justify-between items-center'>
                 <div className="flex flex-col justify-center">
                   <h3 className="text-7xl text-black tracking-wide leading-tight font-semibold">
