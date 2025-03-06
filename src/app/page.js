@@ -19,7 +19,7 @@ export default function Home() {
 
       <HomeDescription />
 
-      <div className="my-3 py-1">
+      <div className ="py-12">
         <div className="flex items-center">
           <hr className="border-black w-1/3 ml-15" />
           <p className="mx-1 text-5xl space-x-8">We only feature the top performing</p>

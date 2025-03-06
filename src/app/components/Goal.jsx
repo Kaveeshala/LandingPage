@@ -8,14 +8,12 @@ export default function Goal() {
     <section className='max-w-7xl mx-auto'>
       <Card className="w-full border-none shadow-none">
         
-        {/* Card Title */}
         <CardTitle>
           <p className="text-5xl py-6">
             Expertise and<br /> passion, on measure
           </p>
         </CardTitle>
 
-        {/* Card Content */}
         <CardContent>
           <div className="flex justify-between items-start">
             
@@ -37,15 +35,12 @@ export default function Goal() {
             </p>
          </div>
 
-        
-
-
             <div className="flex flex-cols items-start gap-20 mt-[-150px]">
               <Image 
                 src={image6}
                 alt="image6"
-                width={600}   // Adjusted width
-                height={700}  // Adjusted height
+                width={600}  
+                height={700}  
                 className="object-cover"
               />
             </div>
