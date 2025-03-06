@@ -4,35 +4,41 @@ import Clients from "./components/Clients";
 import Homes from "./components/Homes";
 import HomeDescription from "./components/HomeDescription";
 import Goal from "./components/Goal";
+import { Separator } from "@/components/ui/separator"; // Import the Separator component
 
 export default function Home() {
   return (
     <div>
+      
       <HeroSection />
-      <div></div>
 
       <h1 className="text-gray-400 text-center py-7 font-semibold">Trusted by</h1>
-
       <Clients />
 
       <Homes />
 
       <HomeDescription />
 
-      <div className ="py-12">
-        <div className="flex items-center">
-          <hr className="border-black w-1/3 ml-15" />
-          <p className="mx-1 text-5xl space-x-8">We only feature the top performing</p>
-        </div>
-        <div className="flex items-center">
-          <p className="mx-2 text-5xl ml-16">homes and verified manufactures.</p>
-          <hr className="border-black w-1/3 mt-4 mr-2" />
-        </div>
+      <div className="max-w-7xl mx-auto p-12 bg-amber-400">
+         <div className="flex flex-col w-full"> 
+            <div className="flex items-center w-2/5">
+                <Separator className="flex-grow h-[2px] bg-black" /> 
+                <h1 className="whitespace-nowrap text-5xl">We only feature the top performing</h1> 
+           </div>
+          </div>
+
+          <div className="flex flex-col gap-2 w-full"> 
+            <div className="flex items-center w-2/5">
+            <h1 className="whitespace-nowrap text-5xl">homes and verified manufactures </h1> 
+                <Separator className="flex-grow h-[2px] bg-black" /> 
+                
+           </div>
+          </div>
       </div>
 
       <Goal />
 
-      <Artcles /> {/* Moved inside the main div */}
-    </div> 
+      <Artcles />
+    </div>
   );
 }
