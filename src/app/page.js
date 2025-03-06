@@ -19,7 +19,7 @@ export default function Home() {
 
       <HomeDescription />
 
-      <div className="max-w-7xl mx-auto p-12 bg-amber-400">
+      <div className="max-w-7xl mx-auto p-12">
          <div className="flex flex-col w-full"> 
             <div className="flex items-center w-2/5">
                 <Separator className="flex-grow h-[2px] bg-black" /> 
