@@ -1,57 +1,48 @@
-import { Card, CardContent, CardTitle } from '@/components/ui/card'
-import Image from 'next/image'
-import image6 from '../../../public/images/image6.png'
-import { GoArrowUpRight } from "react-icons/go"
+import { Card, CardContent, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
+import image6 from '../../../public/images/image6.png';
+import { GoArrowUpRight } from "react-icons/go";
 
-export default function Goal() {
+export default function HomeDescription() {
   return (
-    <section className='max-w-7xl mx-auto'>
+    <section className="max-w-7xl mx-auto">
       <Card className="w-full border-none shadow-none">
-        
-        <CardTitle>
-          <p className="text-5xl py-6">
-            Expertise and<br /> passion, on measure
-          </p>
-        </CardTitle>
-
-        <CardContent>
-          <div className="flex justify-between items-start">
+        <CardContent className="flex gap-8"> 
+          {/* Left side: Text content (larger column) */}
+          <div className="flex flex-col gap-20 w-3/5"> {/* Increased width to 60% */}
+            <h1 className="text-6xl">
+              Expertise and<br /> passion, on measure
+            </h1>
             
-          <div className="flex-1">
-            <p className="text-xs text-justify leading-loose indent-16">
+            {/* Paragraph with justified content */}
+            <p className="text-xm text-justify text-gray-500  indent-16">
               From humble beginnings to a trusted name, our
-            <br /> 
               journey has been built on passion, dedication, and a commitment to
-            <br /> 
               excellence. Over the years, we have grown with a vision to provide
-            <br /> 
               exceptional service, creating lasting relationships with our clients and
-             <br /> 
               communities. With a strong foundation and a forward-thinking
-            <br /> 
               approach, we continue to evolve, embracing innovation while staying
-            <br /> 
               true to our core values.
             </p>
-         </div>
 
-            <div className="flex flex-cols items-start gap-20 mt-[-150px]">
-              <Image 
-                src={image6}
-                alt="image6"
-                width={600}  
-                height={700}  
-                className="object-cover"
-              />
+            <div className="flex items-center gap-2 mt-auto">
+              <p className="text-xl font-semibold">See home</p>
+              <GoArrowUpRight size={18} />
             </div>
           </div>
-        </CardContent>
 
-        <div className="flex flex-colsitems-center text-black font-semibold text-xs">
-                <p className="text-xl tracking-wider">View all homes</p>
-                <GoArrowUpRight size={18} />
-        </div>
+          {/* Right side: Image (smaller column) */}
+          <div className="flex-shrink-0 w-2/4"> {/* Reduced width to 40% */}
+            <Image 
+              src={image6}
+              alt="image6"
+              width={900}  
+              height={500} 
+              className="w-full h-auto object-cover" 
+            />
+          </div>
+        </CardContent>
       </Card>
     </section>
-  )
+  );
 }
