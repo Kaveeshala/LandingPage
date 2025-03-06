@@ -10,7 +10,7 @@ export default function HomeDescription() {
         <CardContent className="flex gap-8"> 
           {/* Left side: Text content (larger column) */}
           <div className="flex flex-col gap-20 w-3/5"> {/* Increased width to 60% */}
-            <h1 className="text-6xl">
+            <h1 className="text-5xl">
               Expertise and<br /> passion, on measure
             </h1>
             
