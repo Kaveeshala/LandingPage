@@ -30,7 +30,7 @@ export default function Homes() {
     
 
   return (
-    <section className="max-w-7xl mx-auto flex flex-col gap-4">
+    <section className="max-w-7xl mx-auto flex flex-col gap-4 mt-30">
     {/* First Child */}
     <div className="flex justify-between items-center">
         <div className="flex flex-col justify-center">
@@ -42,10 +42,11 @@ export default function Homes() {
                 Explore a handpicked selection of homes for sale and find the perfect place to call <br /> 
                 your own. Start your journey toward your dream home today!
             </h1>
-            <div className="flex items-center text-black font-semibold text-xs">
-                <p className="text-xl tracking-wider">View all homes</p>
-                <GoArrowUpRight size={18} />
+            <div className="flex items-center overflow-hidden text-black font-semibold text-xs hover:scale-105 transition transform hover:cursor-pointer">
+              <p className="text-xl tracking-wider">View all homes</p>
+              <GoArrowUpRight size={18} />
             </div>
+
         </div>
     </div>
 
@@ -53,14 +54,15 @@ export default function Homes() {
         {images.map((image, index) => (
             <Card key={index} className="w-full border-none shadow-none"> {/* Full width */}
 
-            <CardHeader>
+            <CardHeader className="overflow-hidden px-0 group">
                 <Image 
                   src={image.src}
                   alt='image'
+                  className="group-hover:scale-105 transition"
 
                 />
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-2 px-0">
                 <CardTitle className="text-2xl">{image.title}</CardTitle>
                 <p className="text-gray-400 text-sm">{image.description}</p>
                 <p>{image.description2}</p>
@@ -76,3 +78,4 @@ export default function Homes() {
 
   )
 }
+
