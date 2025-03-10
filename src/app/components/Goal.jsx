@@ -5,7 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export default function HomeDescription() {
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto mt-28">
       <Card className="w-full border-none shadow-none">
         <CardContent className="flex gap-8"> 
           {/* Left side: Text content (larger column) */}
@@ -25,7 +25,7 @@ export default function HomeDescription() {
               true to our core values.
             </p>
 
-            <div className="flex items-center gap-2 mt-auto">
+            <div className="flex items-center gap-2 mt-auto overflow-hidden hover:scale-102 transition transform hover:cursor-pointer">
               <p className="text-xl font-semibold">See home</p>
               <GoArrowUpRight size={18} />
             </div>
