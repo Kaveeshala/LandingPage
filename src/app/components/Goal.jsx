@@ -26,7 +26,7 @@ export default function HomeDescription() {
             </p>
 
             <div className="flex items-center gap-2 mt-auto overflow-hidden hover:scale-102 transition transform hover:cursor-pointer">
-              <p className="text-xl font-semibold">See home</p>
+              <p className="text-xl font-semibold">Our history</p>
               <GoArrowUpRight size={18} />
             </div>
           </div>
