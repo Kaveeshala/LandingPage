@@ -73,7 +73,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Image 1 section */}
-                      <div className="flex justify-center py-10 bg-green-200 relative h-[500px]">
+                      <div className="flex justify-center py-10 relative h-[500px]">
                         <Image
                           src={image1}
                           alt="house"
