@@ -18,7 +18,7 @@ export default function Clients() {
     ]
 
   return (
-    <Marquee className="your-custom-class" pauseOnHover>
+    <Marquee className="your-custom-class mt-12" pauseOnHover>
        
         {images.map((image, index ) => (
              <div key={index} className='relative w-32 h-32 ml-12'>

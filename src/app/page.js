@@ -12,7 +12,7 @@ export default function Home() {
       
       <HeroSection />
 
-      <h1 className="text-gray-400 text-center py-7 font-semibold">Trusted by</h1>
+      <h1 className="text-gray-400 text-center font-semibold mt-24">Trusted by</h1>
       <Clients />
 
       <Homes />
