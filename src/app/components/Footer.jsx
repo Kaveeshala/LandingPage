@@ -26,14 +26,14 @@ const Footer = () => {
   
   return (
     <footer>
-      <hr className="w-full mx-auto border-gray-300 p-4"/>
-      <div className="max-w-7xl mx-auto flex flex-col">
+      <hr className="w-full mx-auto border-gray-300 mt-26"/>
+      <div className="max-w-7xl mx-auto flex flex-col mt-10">
       <div className='flex justify-between items-center'>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col">
           <h1 className="text-6xl font-semibold tracking-wide">Tilestone</h1>
-          <p className=" text-gray-400">Discover Your Dream Home - Explore Listings <br /> & Find Perfect Match!</p>
+          <p className=" text-gray-400 mt-4">Discover Your Dream Home - Explore Listings <br /> & Find Perfect Match!</p>
 
-          <Label>Subscribe to our newsletter</Label>
+          <Label className="mt-12 p-2">Subscribe to our newsletter</Label>
 
           <div className="flex flex-cols items-center gap-2">
           <Input
@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="flex flex-cols justify-between">
           <div className="flex flex-col gap-6 text-gray-400 space-x-10"> 
           {navLinks.map((link, index) => (
-              <Link href={link.link} key={index}>{link.name}</Link>
+              <Link href={link.link} key={index} className='hover:underline'>{link.name}</Link>
 
             ))}
           </div>
