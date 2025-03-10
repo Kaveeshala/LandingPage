@@ -6,7 +6,7 @@ import { Separator } from '@/components/ui/separator';
 
 export default function HomeDescription() {
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto mt-20">
       <Card className="w-full border-none shadow-none">
         <CardContent className="flex gap-8"> 
 
@@ -53,7 +53,7 @@ export default function HomeDescription() {
               Spacious 5-bedroom, 6-bathroom home featuring modern interiors, an open-plan living area, and a private garden. Perfect for comfort and entertaining!
             </p>
 
-            <div className="flex items-center gap-2 mt-auto">
+            <div className="flex items-center gap-2 overflow-hidden mt-auto hover:scale-104 transition transform hover:cursor-pointer">
               <p className="text-xl font-semibold">See home</p>
               <GoArrowUpRight size={18} />
             </div>
